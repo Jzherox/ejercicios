@@ -35,12 +35,12 @@ while intentos_restantes > 0:
     intento = int(input("Adivina el número (1-50): "))
     
     if intento == secreto:
-        print("¡Ganaste! Adivinaste el número.")
+        print("Adivinaste el número")
         break
     elif intento < secreto:
-        print("El número es mayor.")
+        print("El número es mayor")
     else:
-        print("El número es menor.")
+        print("El número es menor")
     
     intentos_restantes -= 1
 

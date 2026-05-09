@@ -88,12 +88,13 @@ for i in range(0, numero):
 # 6. Factorial de varios números
 # Pedir cuántos números desea procesar y calcular el factorial de cada uno.
 
-numero = int(input("Ingresa un numero: "))
-factorial = numero
-for i in range((numero - 1), 0, -1):
-    factorial *= i
-
-print(f"El factorial de {numero}, es: {factorial}")
+cant_numeros = int(input("Ingresa la cantidad de numeros: "))
+for i in range(cant_numeros):
+    numero = int(input("Ingresa un numero: "))
+    factorial = numero
+    for i in range((numero - 1), 0, -1):
+        factorial *= i
+    print(f"El factorial de {numero}, es: {factorial}")
 
 # 7. Promedio de estudiantes
 # Pedir:
